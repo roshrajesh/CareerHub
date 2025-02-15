@@ -1,0 +1,155 @@
+/* projects.css */
+
+body {
+    background-color: #f4f4f9;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .projects-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #1d3557;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .project-form {
+    background-color: #f8f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+  }
+  
+  .project-form h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #457b9d;
+  }
+  
+  .project-form input,
+  .project-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .project-form input:focus,
+  .project-form textarea:focus {
+    border-color: #457b9d;
+    box-shadow: 0 0 5px rgba(69, 123, 157, 0.2);
+    outline: none;
+  }
+  
+  .project-form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1d3557;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-form button:hover {
+    background-color: #457b9d;
+  }
+  
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: #f1faee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1d3557;
+    font-weight: 600;
+  }
+  
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    font-size: 14px;
+    color: #457b9d;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .project-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-edit {
+    background-color: #ffca3a;
+    color: #fff;
+  }
+  
+  .btn-edit:hover {
+    background-color: #ffb400;
+  }
+  
+  .btn-delete {
+    background-color: #e63946;
+    color: #fff;
+  }
+  
+  .btn-delete:hover {
+    background-color: #d62828;
+  }
+  

@@ -1,0 +1,89 @@
+.admin-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  text-align: right;
+}
+
+.navbar-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.admin-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.student-messages {
+  margin-top: 20px;
+}
+
+.student-message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+}
+
+.message-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #777;
+}
+
+.message-text {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.admin-reply {
+  margin-top: 15px;
+  padding-left: 10px;
+  border-left: 2px solid #007BFF;
+  background-color: #f1f1f1;
+}
+
+.admin-reply-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.admin-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  background-color: #007BFF;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+.typing-indicator {
+  margin-top: 10px;
+  font-style: italic;
+  color: #007BFF;
+}
+
+.typing-indicator.show {
+  display: block;
+}
+
+.typing-indicator {
+  display: none;
+}

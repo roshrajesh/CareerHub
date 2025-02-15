@@ -1,0 +1,154 @@
+/* AdminChatPage.css */
+
+/* General styles for AdminChatPage */
+.admin-chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  /* Navbar styles */
+  .admin-chat-container .navbar {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .admin-chat-container .navbar-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Chat List Section */
+  .admin-chat-container .chat-list {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .admin-chat-container .chat-item {
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-chat-container .chat-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .admin-chat-container .chat-list h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Chat Detail Section */
+  .admin-chat-container .chat-detail {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-chat-container .chat-detail h3 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  /* Message Styles */
+  .admin-chat-container .messages {
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .admin-chat-container .student-msg,
+  .admin-chat-container .admin-msg {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .admin-chat-container .student-msg {
+    background-color: #e0f7fa;
+    text-align: left;
+  }
+  
+  .admin-chat-container .admin-msg {
+    background-color: #e8f5e9;
+    text-align: right;
+  }
+  
+  .admin-chat-container .student-msg p,
+  .admin-chat-container .admin-msg p {
+    margin: 0;
+  }
+  
+  .admin-chat-container .student-msg .timestamp,
+  .admin-chat-container .admin-msg .timestamp {
+    font-size: 0.8em;
+    color: #888;
+  }
+  
+  /* Input Field and Button */
+  .admin-chat-container textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    resize: none;
+    margin-bottom: 10px;
+  }
+  
+  .admin-chat-container textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+  
+  .admin-chat-container button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-chat-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .admin-chat-container button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
+  /* Loading Spinner or Typing Indicator */
+  .admin-chat-container .typing-indicator {
+    margin-top: 10px;
+    font-style: italic;
+    color: #4caf50;
+  }
+  
+  .admin-chat-container .typing-indicator.show {
+    visibility: visible;
+  }
+  
+  .admin-chat-container .typing-indicator {
+    visibility: hidden;
+  }
+  

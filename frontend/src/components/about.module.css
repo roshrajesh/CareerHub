@@ -1,0 +1,48 @@
+.animation_background {
+    animation: fadeInBackground 10s ease-in-out infinite;
+  }
+  
+  @keyframes fadeInBackground {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+.nav_link {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.nav_link:hover {
+    text-decoration: underline;
+}
+
+.about_container {
+    padding: 2rem 0;
+}
+
+.service_card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.service_card:hover {
+    transform: translateY(-10px);
+}
+
+.vision_mission {
+    background: #f0f4f8;
+    padding: 2rem;
+    border-radius: 10px;
+}

@@ -1,0 +1,124 @@
+/* Scoped Styles for ProfileSection Component */
+.profile-section {
+    max-width: 60rem;  /* 960px */
+    margin: 2rem auto;
+    padding: 2rem;
+    background: linear-gradient(to right, #fff, #f0f4f8);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .profile-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-section p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .profile-section label {
+    font-size: 0.875rem;
+    color: #2d3748;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-section input, .profile-section select {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all 0.2s ease;
+  }
+  
+  .profile-section input:focus, .profile-section select:focus {
+    border-color: #5a67d8;
+    outline: none;
+    box-shadow: 0 0 10px rgba(90, 103, 216, 0.3);
+  }
+  
+  .profile-section button {
+    padding: 1rem;
+    background-color: #5a67d8;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .profile-section button:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+  }
+  
+  .profile-section button:active {
+    background-color: #434190;
+    transform: translateY(1px);
+  }
+  
+  .profile-section .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .profile-section h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-section input, .profile-section select {
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .profile-section input:hover, .profile-section select:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), -4px -4px 6px rgba(255, 255, 255, 0.7);
+  }
+  
+  .profile-section button:hover {
+    background-color: #4c51bf;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-section button:focus {
+    box-shadow: 0 0 12px rgba(90, 103, 216, 0.3);
+  }
+  
+  .profile-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }
+  

@@ -1,0 +1,303 @@
+/* Global Styles */
+.my-application-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .my-application-page body {
+    background: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  .my-application-page h1, .my-application-page h2, .my-application-page h3, .my-application-page h4 {
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Container */
+  .my-application-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Page Header */
+  .my-application-page .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .my-application-page .page-header h1 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+  
+  .my-application-page .search-bar {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .my-application-page .search-bar:focus {
+    border-color: #2980b9;
+  }
+  
+  /* Job List Section */
+  .my-application-page .job-listing {
+    margin-top: 30px;
+  }
+  
+  .my-application-page .job-listing h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .my-application-page .jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .my-application-page .job-card {
+    background: #f0f4f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .my-application-page .job-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .my-application-page .job-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .my-application-page .job-card p {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .my-application-page .job-actions button {
+    padding: 8px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-application-page .job-actions button:hover {
+    background-color: #3498db;
+  }
+  
+  /* Applicants Section */
+  .my-application-page .applicants-section {
+    margin-top: 40px;
+  }
+  
+  .my-application-page .applicants-section h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .my-application-page .applicants-list {
+    list-style-type: none;
+  }
+  
+  .my-application-page .applicant-card {
+    background: #ecf0f1;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-application-page .applicant-card h4 {
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .my-application-page .applicant-card p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin: 5px 0;
+  }
+  
+  .my-application-page .applicant-actions button {
+    padding: 8px 20px;
+    margin-right: 10px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-application-page .applicant-actions button:hover {
+    background-color: #2ecc71;
+  }
+  
+  .my-application-page .btn-reject {
+    background-color: #e74c3c;
+  }
+  
+  .my-application-page .btn-reject:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Modal */
+  .my-application-page .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .my-application-page .modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .my-application-page .modal h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .my-application-page .modal .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .my-application-page .modal label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .my-application-page .modal textarea, .my-application-page .modal input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .my-application-page .modal input[type="url"] {
+    padding: 10px;
+  }
+  
+  .my-application-page .modal-actions button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-application-page .modal-actions button:hover {
+    background-color: #3498db;
+  }
+  
+  .my-application-page .modal-actions button:last-child {
+    background-color: #e74c3c;
+  }
+  
+  .my-application-page .modal-actions button:last-child:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .my-application-page .page-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .my-application-page .jobs-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .my-application-page .modal-content {
+      width: 100%;
+      padding: 20px;
+    }
+    .my-applications {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    
+    .applications-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .applications-list, .admin-view {
+      margin-top: 20px;
+    }
+    
+    .applications-grid, .students-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .application-card, .student-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+    
+    .application-card h3, .student-card h3 {
+      margin-top: 0;
+    }
+    
+    .error-message {
+      color: red;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+  }    
+  

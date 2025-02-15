@@ -1,0 +1,335 @@
+/* Reset default styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    
+    background-color: #f4f5f7;
+    color: #555;
+    line-height: 1.8;
+}
+/* Apply box-sizing globally */
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Includes padding and border in element's total dimensions */
+}
+
+.logo-container img{
+    width: 200px; /* Increased width */
+    height: 100px; /* Increased height */
+    margin-right: 1rem; /* Adjust spacing between logo and text */
+}
+.logo-container h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    right: 18%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; /* Force font-family */
+    font-size: 40px !important; /* Set font-size to 24px with !important */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Reduced padding */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px; /* Reduced font size */
+}
+
+/* Style the navigation container */
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the links */
+    align-items: center;
+    background-color: #fff; /* Dark background for the navigation bar */
+    padding: 10px 0;
+  }
+  
+  /* Style each link */
+  .nav-container a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text color */
+    font-size: 16px; /* Set font size */
+    padding: 5px 8px; /* Reduce space around the text */
+    margin: 0 4px; /* Smaller horizontal margin to reduce space between links */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+  }
+  
+  /* Change color on hover */
+  .nav-container a:hover {
+    background-color: #555; /* Darker background on hover */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    margin-right: 0.8rem;
+}
+
+.navbar h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #4caf50;
+}
+
+
+/* Root Variables for easy customization */
+:root {
+    --navbar-bg-color: #ffffff;
+    --navbar-text-color: #333333;
+    --navbar-hover-color: #4caf50;
+    --navbar-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--navbar-bg-color);
+    color: var(--navbar-text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: var(--navbar-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Added a subtle border */
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-family);
+    color: var(--navbar-text-color);
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--navbar-text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid transparent; /* Default border for alignment */
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+    background-color: var(--navbar-hover-color);
+    border-color: var(--navbar-hover-color); /* Border color matches hover background */
+}
+
+.navbar .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--navbar-bg-color);
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        box-shadow: var(--navbar-shadow);
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .navbar .menu-toggle {
+        display: block;
+    }
+}
+
+
+/* Hero Section */
+:root {
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --text-color: white;
+    --overlay-color: rgba(0, 0, 0, 0.7);
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.3); /* Reduced opacity to make the image more visible */
+    --text-color: #ffffff;
+}
+
+.hero {
+    background: linear-gradient(to bottom, var(--overlay-color), var(--overlay-color)), 
+        url('../components/hero-background.jpg') center/cover no-repeat;
+    color: var(--text-color);
+    text-align: center;
+    padding: 8rem 2rem; /* Increased padding for a more spacious look */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh; /* Full viewport height for a modern, immersive design */
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 4rem; /* Slightly larger for better visual impact */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family);
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.5rem; /* Enhanced for readability */
+    margin-bottom: 3rem;
+    font-family: var(--font-family);
+    max-width: 700px; /* Limits the paragraph width for a cleaner look */
+}
+
+.hero button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 1rem 3rem; /* Slightly larger padding for better usability */
+    font-size: 1.2rem;
+    border-radius: 30px; /* Smooth, modern border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.hero button:hover {
+    background-color: var(--primary-hover-color);
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* Features Section */
+.features {
+    background-color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 2.5rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin: 1.5rem 1rem 0.5rem;
+}
+
+.card p {
+    color: #777;
+    font-size: 1rem;
+    margin: 0 1rem 1.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a2e;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}

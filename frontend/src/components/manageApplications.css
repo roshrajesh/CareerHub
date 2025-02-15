@@ -1,0 +1,129 @@
+/* Main container for the Manage Applications page */
+.manage-applications-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 20px;
+  }
+  
+  .manage-applications-container header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .manage-applications-container h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Search and Filters Section */
+  .manage-applications-container .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .manage-applications-container .search-bar input {
+    width: 250px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .manage-applications-container .filter-selects select {
+    padding: 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .manage-applications-container .filter-selects {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Applications Table */
+  .manage-applications-container .applications-table {
+    overflow-x: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .manage-applications-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  }
+  
+  .manage-applications-container th, .manage-applications-container td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .manage-applications-container th {
+    background-color: #009688;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  .manage-applications-container td {
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .manage-applications-container .status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+  
+  .manage-applications-container .status.pending {
+    background-color: #ffeb3b;
+    color: #fff;
+  }
+  
+  .manage-applications-container .status.accepted {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .manage-applications-container .status.rejected {
+    background-color: #f44336;
+    color: #fff;
+  }
+  
+  .manage-applications-container button.status-btn {
+    background-color: #009688;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .manage-applications-container button.status-btn:hover {
+    background-color: #00796b;
+  }
+  
+  /* No Results */
+  .manage-applications-container .no-results,
+  .manage-applications-container .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .manage-applications-container .no-results {
+    color: #f44336;
+  }
+  
+  .manage-applications-container .loading {
+    font-size: 1.5rem;
+    color: #009688;
+  }
+  
